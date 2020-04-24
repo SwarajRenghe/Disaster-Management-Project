@@ -9,9 +9,13 @@ app = Flask(__name__, template_folder = './', static_url_path='/static')
 app.debug = True
 app.secret_key = 'development key'
 
-@app.route ("/disaster_tweets")
+@app.route ("/")
 def home():
 	return render_template ("home.html")
+
+@app.route ("/disaster_tweets")
+def disaster_tweets():
+	return render_template ("disaster_tweets.html")
 
 @app.route ("/get_pred", methods=["POST"])
 def get_prediction():

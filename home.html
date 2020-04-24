@@ -2,251 +2,103 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-	<title> DM Project - 1 </title>
+	<title> Temporary Placeholder Page </title>
 </head>
 <style type="text/css">
 	html, body {
-	    height: 100%;
-	    overflow: none;
 	    background-color: #F5F5F5;
-	}
-	.button_to_press {
-		background-color: #00d1b2;
-		color: white;
-		/*box-shadow: 5px 10px 10px;*/
-		/*box-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02)*/
-	}
-	.shadow {
-		/*box-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02)*/
-		box-shadow: 1px 1px 5px grey;
 	}
 </style>
 <body>
 
-	<section class="hero is-primary is-bold">
+	<section class="hero is-fullheight is-primary is-bold">
 	  <div class="hero-body">
 	    <div class="container">
-	      <h1 class="title">
-	        Disaster Management and Mitigation using Social Media 
+	    	<h1 style="font-size: 40px"> Disaster Management Final Project </h1>
+	      <h1 class="title" style="font-size: 70px">
+	        How can social media be deployed in warning communities? 
+	      </h1><br><br>
+	        <ol style="font-size: 30px; padding-left: 1em;"> 
+	        	<li> How can any community be engaged in Early Warning Systems (EWS) to save lives and to reduce injuries? </li>
+	        	<li> What could be the different forms of social media that could be used in disaster management focusing on volunteer groups and organizations? </li>
+	        	<li> Detect and mitigate the spread of fake news surrounding a disaster on social media.  </li>
+	        	<li> Try to adapt existing mesh network messaging architectures to be deployed for communication during disasters.  </li>
+	        </ol>
 	      </h1>
-	      <h2 class="subtitle">
-	        Developed by Swaraj Renghe, Shreyas Shankar and Sriven Reddy
-	      </h2>
+	      <h1 style="font-size: 35px"> <br><br>
+	        Developed by <b> Swaraj Renghe, Shreyas Shankar and Sriven Reddy </b>
+	      </h1>
 	    </div>
 	  </div>
-	</section>
-
-	<div class="container">
-		<div class="notification">
-			<div class="tile is-ancestor">
-			  <div class="tile is-vertical is-parent">
-			    <div class="tile is-child box" style="font-size: 19px;">
-			      <p class="title">Description of Our Model</p>
-			      <p> We had to consider several parameters on approching this problem. </p><br> 
-			      <ol type="1" style="padding-left: 1em">
-			      	<li> <p> We picked Twitter as a platform bceause it appeared to be easier to approach among the popular social media netwrorks, thanks to it's open and free API. We hope that this work can be extended to more personal social media networks. </p></li>
-			      	<li> <p> We experimented with various kinds of word embeddings, as this is a fundamental decision can introduce large variations in accuracies. We opted against using existing Word2Vec / GloVe word vectors, because these are trained on a Wikipedia or a news corpus, and do not lend themselves well to user generated content, the kind that is usually found on social media sites. </p></li>
-			      	<li> <p> Finally, we were confused about what architecture to go with, becaus there exists various deep learning architectures, and each of them have their own specific uses, advantages and disadvantages. We had to look for an architecture that had proven to be reliable on content like tweets, and it had to be sensitive enough to learn the subtle differences between valid disaster tweets and non-disaster tweets.<br> We first chose to model our architecture after a very recent and well researched research paper titled <b> Selective Expression For Event Coreference Resolution on Twitter [2019] </b> from Wenhan Chao et. al., published from the School of Computer Science and Engineering, Biejing. The paper can be found <a href="https://zhunchenluo.github.io/zhunchenluo.github.io/papers/2019-IJCNN-Selective%20Expression%20For%20Event%20Coreference%20Resolution%20on%20Twitter.pdf"> here.</a> <br><br> We chose this paper as it had a well tested architecture that had previosly been utilised to study tweets, and it had shown great results. Unfortunately, as we feared, a deep learning approach added a very large overhead in both testing and training time. The task at hand demanded a very quick method of gauging disasters, owing to the volatile nature of Twitter, and the speed at which content is uploaded on the website. Furthermore, due to the still new nature of deep learning language modelling architectures, the results obtained were not drastically higher than using ML methods. <br><br> So we have gone ahead with a logistic regression machine learning model, that we worked together and programmed from scratch.  </p></li>
-			      </ol> 
-			    </div>	 
-			  </div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="notification">
-			<div class="tile is-ancestor">
-			  <div class="tile is-vertical is-parent">
-			    <div class="tile is-child box" style="font-size: 19px;">
-			      <p class="title">Dataset Used</p>
-			      <p> We wished to build a real-time scraper on Twitter, but our local machines could not cope up with the scale of tweets being generated on Twitter. So we reverted to finding public datasets that have scraped Twitter earlier, and taking combinations of them to enhace type converage, some with specifically disaster tweets.  </p><br> 
-
-			      <nav class="level">
-			        <div class="level-item has-text-centered">
-			          <div>
-			            <p class="heading">Total Tweets</p>
-			            <p class="title">7,456</p>
-			          </div>
-			        </div>
-			        <div class="level-item has-text-centered">
-			          <div>
-			            <p class="heading">Disaster Specific</p>
-			            <p class="title">3,576</p>
-			          </div>
-			        </div>
-			        <div class="level-item has-text-centered">
-			          <div>
-			            <p class="heading">Average Tweet Length</p>
-			            <p class="title">9.58 Words</p>
-			          </div>
-			        </div>
-			      </nav>
-
-			    </div>	 
-			  </div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="notification">
-			<div class="tile is-ancestor">
-			  <div class="tile is-vertical is-parent">
-			    <div class="tile is-child box" style="font-size: 19px;">
-			      <p class="title">Model Results</p>
-			      <p> We wished to build a real-time scraper on Twitter, but our local machines could not cope up with the scale of tweets being generated on Twitter. So we reverted to finding public datasets that have scraped Twitter earlier, and taking combinations of them to enhace type converage, some with specifically disaster tweets.  </p>
-			    </div>	 
-			  </div>
-			</div>
-		</div>
-	</div>
+	</section><br><br>
 
 	<div class="container">
 		<div class="notification">
 			<div class="tile is-ancestor">
 			  <div class="tile is-vertical is-parent">
 			    <div class="tile is-child box">
-			      <p class="title">Accuracy</p>
-			      <figure class="image">
-			        <img src="/static/images/loss.png">
-			      </figure>
-			    </div>
-			  </div>
-			  <div class="tile is-vertical is-parent">
-			    <div class="tile is-child box">
-			      <p class="title">Training + Testing Loss</p>
-			      <figure class="image">
-			        <img src="/static/images/loss.png" alt="missing photo">
-			      </figure>
+			      <p class="title">Reason to select project</p>
+			      <p style="font-size: 19px"> All three of the team members have been working with LTRC lab for our honors project, hence we chose a project that can best exploit our skillset. We feel like we can use some NLP techniques like sentiment analysis, semantic word disambiguation and other techniques to better collaborate between volunteer groups, to better understand local situations and to provide immediate support to affected individuals. </p>
 			    </div>
 			  </div>
 			</div>
 		</div>
 	</div>
 
-
 	<div class="container">
+		<div class="notification">	
+			<div class="tile is-ancestor">
+			  <div class="tile is-4 is-vertical is-parent">
+			    <div class="tile is-child box">
+			      <p> <b> Challenge One </b> </p>
+			      <p style="font-size:19px"> <b> Lack of Means of Reliable Communication </b> </p>
+			      <p> Immediately following a disaster, most means of communication like phone networks and internet service providers will be non-operational. </p>
+			    </div>
+			    <div class="tile is-child box">
+			      <p> <b> Challenge Two </b> </p>
+			      <p style="font-size:19px"> <b> Spread of Fake News </b> </p>
+			      <p> In the aftermath of a disaster, there’s rampant spread of fake and propaganda news spread on social media, that can have adverse effects on relief efforts, and people’s morale. </p>
+			    </div>
+			    <div class="tile is-child box">
+			      <p> <b> Challenge Three </b> </p>
+			      <p style="font-size:19px"> <b> Awareness about Disasters </b> </p>
+			      <p> Given social media content, like tweets or FB posts, this challenge is about recognizing which of them are talking about a disaster event that took place, using AI. </p>
+			    </div>
+			  </div>
+			  <div class="tile is-parent">
+			    <div class="tile is-child box">
+			      <p class="title">Objectives</p>
+			      		<p style="font-size:28px"> <b> Disaster Tweet Identification </b> </p>
+			      		<p> Twitter has become an important communication channel in times of emergency. The iniquitousness of smartphones enables people to announce an emergency they’re observing in real-time. Because of this, disaster relief organizations and news agencies are interested in programmatically monitoring Twitter. Unfortunately, it’s usually a difficult task to correctly identify a valid disaster tweet.</p><br>
+
+			      		<p style="font-size:28px"> <b> Fake News Classifier  </b> </p>
+			      		<p> The unmoderated nature of sites such as Twitter can create a rumor mill among users. When false information is maliciously or mistakenly spread on social media sites it can result in millions of misinformed users. Over the last decade, there has been an overwhelming amount of cases where false news spreads during crisis events, such as natural disasters and terrorist attacks. We will try to build a method of a lookup on reputed new sources to verify or refute claims made, and classify them as fake or real. </p> <br>
+
+			      		<p style="font-size:28px"> <b> Mesh Broadcast Network  </b> </p>
+			      		<p> In mesh networks, messages bypass the internet by using protocols that allow devices to talk to each other – eg. Bluetooth or an Ad Hoc wifi network running on the device. The idea of localised communication that needs no external infrastructure is very useful during disasters that might destroy existing cell towers and underground cables cutting off people from accessing new information about the disaster. A light weight app might be built to allow communication during disasters and to allow the government to direct citizens to safety and provide relief and information about rescue.</p>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" style="width: 35%;">
 	  <div class="notification">
-	   		<div class="tile is-ancestor" style="height: 80%;">
-	   		  <div class="tile is-4 is-vertical is-parent">
-	   		    <div class="tile is-child box">
-	   		      <p class="title">Some Examples</p>
-
-
-	   		      			<div class="card">
-	   		      			  <div class="card-content">
-	   		      			    <div class="media">
-	   		      			      <div class="media-left">
-	   		      			        <figure class="image is-48x48">
-	   		      			          <img src="https://secure.i.telegraph.co.uk/multimedia/archive/03249/archetypal-female-_3249633c.jpg" alt="Placeholder image">
-	   		      			        </figure>
-	   		      			      </div>
-	   		      			      <div class="media-content">
-	   		      			        <p class="title is-4">Karen</p>
-	   		      			        <p class="subtitle is-6">@karen</p>
-	   		      			      </div>
-	   		      			    </div>
-
-	   		      			    <div class="content" style="font-size: 19px">
-	   		      			      on the outside you're ablaze and alive
-	   		      			    </div>
-
-	   		      			      <footer class="card-footer button_to_press">
-	   		      			        <p class="card-footer-item" onclick="add_to_input('on the outside you\'re ablaze and alive')">
-	   		      			          <b> Add To Model </b>
-	   		      			        </p>
-	   		      			      </footer>
-	   		      			  </div>
-	   		      			</div>
-
-
-	   		      			<div class="card">
-	   		      			  <div class="card-content">
-	   		      			    <div class="media">
-	   		      			      <div class="media-left">
-	   		      			        <figure class="image is-48x48">
-	   		      			          <img src="https://secure.i.telegraph.co.uk/multimedia/archive/03249/archetypal-male-fa_3249635c.jpg" alt="Placeholder image">
-	   		      			        </figure>
-	   		      			      </div>
-	   		      			      <div class="media-content">
-	   		      			        <p class="title is-4">John Smith</p>
-	   		      			        <p class="subtitle is-6">@johnsmith</p>
-	   		      			      </div>
-	   		      			    </div>
-
-	   		      			    <div class="content" style="font-size: 19px">
-	   		      			      Just happened - a terrible car crash 
-	   		      			    </div>
-
-	   		      			      <footer class="card-footer button_to_press">
-	   		      			        <p class="card-footer-item" onclick="add_to_input('Just happened - a terrible car crash')">
-	   		      			          <b> Add To Model </b>
-	   		      			        </p>
-	   		      			      </footer>
-	   		      			  </div>
-	   		      			</div>
-
-	   		    </div>
-	   		  </div>
-	   		  <div class="tile is-parent" >
-	   		    <div class="tile is-child box" style="font-size: 17.2px;">
-	   		      <p class="title">Monitoring Disasters and Accidents through Twitter</p>
-	   		      <p> Twitter, and other social media sites have become important communication channel in times of emergencies. As smartphones become more ubiquitous, it becomes imperative to monitor these outlets. </p><br> 
-	   		      <p> <b> Law enforcement agencies, disaster relief organizations and news agencies </b> are interested in programmatically monitoring Twitter. These become quick methods of identifying smaller scale disasters and risks. </p><br>
-	   		      <p> Unfortunately, it’s usually a difficult task to correctly identify a valid disaster tweet. </p><br> 
-	   		      <p> We aim to use state-of-the-art NLP models to help disaster authorities identify occurrences of disasters immediately, by scouring social media for posts by citizens caught in a disaster.  While local governments and relief organizations can measure a community’s ability to respond to a disaster or measure its impacts after, they cannot monitor the effects in real time. Several studies have shown that supplementing social media data can be a real advantage to first responders. Depending on the performance of the model, it may even be possible to deploy this aspect of the project in helping disaster management authorities in the country. </p><br> 
-	   		    </div>	   		    
-	   		  </div>
-	   		</div>
-
-	   		<p class="title"> Enter A Tweet </p>
-
-	   		<div class="field has-addons">
-	   		  <p class="control is-expanded">
-	   		    <input class="input is-focused" type="text" placeholder="Enter Tweet" id="input">
-	   		  </p>
-	   		  <p class="control">
-	   		    <a class="button is-primary" onclick="clicked()">
-	   		      Run Model
-	   		    </a>
-	   		  </p>
-	   		</div>
-
-
-	   		<br>
-	   		<p class="title" id="result"> Result :  </p>
-
+	     <div class="buttons">
+	       <a href="/disaster_tweets" style="text-decoration: none;">
+		       	<button class="button is-primary" style="margin-right: 20px; font-size: 19px">
+		       		<b>Disaster Tweet Identification</b>
+		       	</button>
+	       </a>
+	       <a href="#" style="text-decoration: none;">
+	       		<button class="button is-primary" style="font-size: 19px">
+	       			<b>Fake News Identifier</b>
+	       		</button>
+	       	</a>
+	     </div>
 	  </div>
 	</div>
-	
-	
+
 
 </body>
-
-<script type="text/javascript">
-	function add_to_input (a) {
-		document.getElementById ("input").value = a;
-	}
-	function clicked () {
-		console.log ("clicked")
-		var tweet = document.getElementById ("input").value;
-		var xhttp = new XMLHttpRequest();
-		xhttp.onreadystatechange = function() {
-		    if (this.readyState == 4 && this.status == 200) {
-		       if (xhttp.responseText == "yes") {
-		       		document.getElementById ("result").innerText = "Running AI Model..."
-		       		setTimeout(function(){ document.getElementById ("result").innerText = " Result : It is a disaster Tweet";  }, 3000);	
-		       }
-		       else {
-		       		document.getElementById ("result").innerText = "Running AI Model..."
-		       		setTimeout(function(){ document.getElementById ("result").innerText = " Result : It is NOT a disaster Tweet";  }, 3000);
-		       }
-		    }
-		};
-		xhttp.open("POST", "/get_pred", true);
-		xhttp.send(tweet);
-	}
-</script>
-
 </html>
