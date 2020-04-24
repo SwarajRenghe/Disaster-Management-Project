@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+	<title> DM Project - 1 </title>
+</head>
+<style type="text/css">
+	html, body {
+	    height: 100%;
+	    overflow: none;
+	    background-color: #F5F5F5;
+	}
+	.button_to_press {
+		background-color: #00d1b2;
+		color: white;
+		/*box-shadow: 5px 10px 10px;*/
+		/*box-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02)*/
+	}
+	.shadow {
+		/*box-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02)*/
+		box-shadow: 1px 1px 5px grey;
+	}
+</style>
+<body>
+
+	<section class="hero is-primary is-bold">
+	  <div class="hero-body">
+	    <div class="container">
+	      <h1 class="title">
+	        Disaster Management and Mitigation using Social Media 
+	      </h1>
+	      <h2 class="subtitle">
+	        Developed by Swaraj Renghe, Shreyas Shankar and Sriven Reddy
+	      </h2>
+	    </div>
+	  </div>
+	</section>
+
+	<div class="container">
+		<div class="notification">
+			<div class="tile is-ancestor">
+			  <div class="tile is-vertical is-parent">
+			    <div class="tile is-child box">
+			      <p class="title">One</p>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+	  <div class="notification">
+	   		<div class="tile is-ancestor" style="height: 80%;">
+	   		  <div class="tile is-4 is-vertical is-parent">
+	   		    <div class="tile is-child box">
+	   		      <p class="title">Some Examples</p>
+
+
+	   		      			<div class="card">
+	   		      			  <div class="card-content">
+	   		      			    <div class="media">
+	   		      			      <div class="media-left">
+	   		      			        <figure class="image is-48x48">
+	   		      			          <img src="https://secure.i.telegraph.co.uk/multimedia/archive/03249/archetypal-female-_3249633c.jpg" alt="Placeholder image">
+	   		      			        </figure>
+	   		      			      </div>
+	   		      			      <div class="media-content">
+	   		      			        <p class="title is-4">Karen</p>
+	   		      			        <p class="subtitle is-6">@karen</p>
+	   		      			      </div>
+	   		      			    </div>
+
+	   		      			    <div class="content" style="font-size: 19px">
+	   		      			      on the outside you're ablaze and alive
+	   		      			    </div>
+
+	   		      			      <footer class="card-footer button_to_press">
+	   		      			        <p class="card-footer-item" onclick="add_to_input('on the outside you\'re ablaze and alive')">
+	   		      			          <b> Add To Model </b>
+	   		      			        </p>
+	   		      			      </footer>
+	   		      			  </div>
+	   		      			</div>
+
+
+	   		      			<div class="card">
+	   		      			  <div class="card-content">
+	   		      			    <div class="media">
+	   		      			      <div class="media-left">
+	   		      			        <figure class="image is-48x48">
+	   		      			          <img src="https://secure.i.telegraph.co.uk/multimedia/archive/03249/archetypal-male-fa_3249635c.jpg" alt="Placeholder image">
+	   		      			        </figure>
+	   		      			      </div>
+	   		      			      <div class="media-content">
+	   		      			        <p class="title is-4">John Smith</p>
+	   		      			        <p class="subtitle is-6">@johnsmith</p>
+	   		      			      </div>
+	   		      			    </div>
+
+	   		      			    <div class="content" style="font-size: 19px">
+	   		      			      Just happened - a terrible car crash 
+	   		      			    </div>
+
+	   		      			      <footer class="card-footer button_to_press">
+	   		      			        <p class="card-footer-item" onclick="add_to_input('Just happened - a terrible car crash')">
+	   		      			          <b> Add To Model </b>
+	   		      			        </p>
+	   		      			      </footer>
+	   		      			  </div>
+	   		      			</div>
+
+	   		    </div>
+	   		  </div>
+	   		  <div class="tile is-parent" >
+	   		    <div class="tile is-child box" style="font-size: 17.2px;">
+	   		      <p class="title">Monitoring Disasters and Accidents through Twitter</p>
+	   		      <p> Twitter, and other social media sites have become important communication channel in times of emergencies. As smartphones become more ubiquitous, it becomes imperative to monitor these outlets. </p><br> 
+	   		      <p> <b> Law enforcement agencies, disaster relief organizations and news agencies </b> are interested in programmatically monitoring Twitter. These become quick methods of identifying smaller scale disasters and risks. </p><br>
+	   		      <p> Unfortunately, it’s usually a difficult task to correctly identify a valid disaster tweet. </p><br> 
+	   		      <p> We aim to use state-of-the-art NLP models to help disaster authorities identify occurrences of disasters immediately, by scouring social media for posts by citizens caught in a disaster.  While local governments and relief organizations can measure a community’s ability to respond to a disaster or measure its impacts after, they cannot monitor the effects in real time. Several studies have shown that supplementing social media data can be a real advantage to first responders. Depending on the performance of the model, it may even be possible to deploy this aspect of the project in helping disaster management authorities in the country. </p><br> 
+	   		    </div>	   		    
+	   		  </div>
+	   		</div>
+
+	   		<p class="title"> Enter A Tweet </p>
+
+	   		<div class="field has-addons">
+	   		  <p class="control is-expanded">
+	   		    <input class="input is-focused" type="text" placeholder="Enter Tweet" id="input">
+	   		  </p>
+	   		  <p class="control">
+	   		    <a class="button is-primary" onclick="clicked()">
+	   		      Run Model
+	   		    </a>
+	   		  </p>
+	   		</div>
+
+
+	   		<br>
+	   		<p class="title" id="result"> Result :  </p>
+
+	  </div>
+	</div>
+	
+	
+
+</body>
+
+<script type="text/javascript">
+	function add_to_input (a) {
+		document.getElementById ("input").value = a;
+	}
+	function clicked () {
+		console.log ("clicked")
+		var tweet = document.getElementById ("input").value;
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		       if (xhttp.responseText == "yes") {
+		       		document.getElementById ("result").innerText = "Running AI Model..."
+		       		setTimeout(function(){ document.getElementById ("result").innerText = " Result : It is a disaster Tweet";  }, 3000);	
+		       }
+		       else {
+		       		document.getElementById ("result").innerText = "Running AI Model..."
+		       		setTimeout(function(){ document.getElementById ("result").innerText = " Result : It is NOT a disaster Tweet";  }, 3000);
+		       }
+		    }
+		};
+		xhttp.open("POST", "/get_pred", true);
+		xhttp.send(tweet);
+	}
+</script>
+
+</html>
