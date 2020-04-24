@@ -40,8 +40,85 @@
 		<div class="notification">
 			<div class="tile is-ancestor">
 			  <div class="tile is-vertical is-parent">
+			    <div class="tile is-child box" style="font-size: 19px;">
+			      <p class="title">Description of Our Model</p>
+			      <p> We had to consider several parameters on approching this problem. </p><br> 
+			      <ol type="1" style="padding-left: 1em">
+			      	<li> <p> We picked Twitter as a platform bceause it appeared to be easier to approach among the popular social media netwrorks, thanks to it's open and free API. We hope that this work can be extended to more personal social media networks. </p></li>
+			      	<li> <p> We experimented with various kinds of word embeddings, as this is a fundamental decision can introduce large variations in accuracies. We opted against using existing Word2Vec / GloVe word vectors, because these are trained on a Wikipedia or a news corpus, and do not lend themselves well to user generated content, the kind that is usually found on social media sites. </p></li>
+			      	<li> <p> Finally, we were confused about what architecture to go with, becaus there exists various deep learning architectures, and each of them have their own specific uses, advantages and disadvantages. We had to look for an architecture that had proven to be reliable on content like tweets, and it had to be sensitive enough to learn the subtle differences between valid disaster tweets and non-disaster tweets.<br> We first chose to model our architecture after a very recent and well researched research paper titled <b> Selective Expression For Event Coreference Resolution on Twitter [2019] </b> from Wenhan Chao et. al., published from the School of Computer Science and Engineering, Biejing. The paper can be found <a href="https://zhunchenluo.github.io/zhunchenluo.github.io/papers/2019-IJCNN-Selective%20Expression%20For%20Event%20Coreference%20Resolution%20on%20Twitter.pdf"> here.</a> <br><br> We chose this paper as it had a well tested architecture that had previosly been utilised to study tweets, and it had shown great results. Unfortunately, as we feared, a deep learning approach added a very large overhead in both testing and training time. The task at hand demanded a very quick method of gauging disasters, owing to the volatile nature of Twitter, and the speed at which content is uploaded on the website. Furthermore, due to the still new nature of deep learning language modelling architectures, the results obtained were not drastically higher than using ML methods. <br><br> So we have gone ahead with a logistic regression machine learning model, that we worked together and programmed from scratch.  </p></li>
+			      </ol> 
+			    </div>	 
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="notification">
+			<div class="tile is-ancestor">
+			  <div class="tile is-vertical is-parent">
+			    <div class="tile is-child box" style="font-size: 19px;">
+			      <p class="title">Dataset Used</p>
+			      <p> We wished to build a real-time scraper on Twitter, but our local machines could not cope up with the scale of tweets being generated on Twitter. So we reverted to finding public datasets that have scraped Twitter earlier, and taking combinations of them to enhace type converage, some with specifically disaster tweets.  </p><br> 
+
+			      <nav class="level">
+			        <div class="level-item has-text-centered">
+			          <div>
+			            <p class="heading">Total Tweets</p>
+			            <p class="title">7,456</p>
+			          </div>
+			        </div>
+			        <div class="level-item has-text-centered">
+			          <div>
+			            <p class="heading">Disaster Specific</p>
+			            <p class="title">3,576</p>
+			          </div>
+			        </div>
+			        <div class="level-item has-text-centered">
+			          <div>
+			            <p class="heading">Average Tweet Length</p>
+			            <p class="title">9.58 Words</p>
+			          </div>
+			        </div>
+			      </nav>
+
+			    </div>	 
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="notification">
+			<div class="tile is-ancestor">
+			  <div class="tile is-vertical is-parent">
+			    <div class="tile is-child box" style="font-size: 19px;">
+			      <p class="title">Model Results</p>
+			      <p> We wished to build a real-time scraper on Twitter, but our local machines could not cope up with the scale of tweets being generated on Twitter. So we reverted to finding public datasets that have scraped Twitter earlier, and taking combinations of them to enhace type converage, some with specifically disaster tweets.  </p>
+			    </div>	 
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="notification">
+			<div class="tile is-ancestor">
+			  <div class="tile is-vertical is-parent">
 			    <div class="tile is-child box">
-			      <p class="title">One</p>
+			      <p class="title">Accuracy</p>
+			      <figure class="image">
+			        <img src="/static/images/loss.png">
+			      </figure>
+			    </div>
+			  </div>
+			  <div class="tile is-vertical is-parent">
+			    <div class="tile is-child box">
+			      <p class="title">Training + Testing Loss</p>
+			      <figure class="image">
+			        <img src="/static/images/loss.png" alt="missing photo">
+			      </figure>
 			    </div>
 			  </div>
 			</div>

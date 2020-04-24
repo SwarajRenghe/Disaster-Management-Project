@@ -5,7 +5,7 @@ from flask import Flask
 from flask import render_template
 from flask import request
 
-app = Flask(__name__, template_folder = './')
+app = Flask(__name__, template_folder = './', static_url_path='/static')
 app.debug = True
 app.secret_key = 'development key'
 
