@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+	<title> DM Project - 1 </title>
+</head>
+<style type="text/css">
+	html, body {
+	    height: 100%;
+	    overflow: none;
+	    background-color: #F5F5F5;
+	}
+	.button_to_press {
+		background-color: #00d1b2;
+		color: white;
+		/*box-shadow: 5px 10px 10px;*/
+		/*box-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02)*/
+	}
+	.shadow {
+		/*box-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02)*/
+		box-shadow: 1px 1px 5px grey;
+	}
+</style>
+<body>
+
+	<section class="hero is-primary is-bold">
+	  <div class="hero-body">
+	    <div class="container">
+	      <h1 class="title">
+	        Disaster Management and Mitigation using Social Media 
+	      </h1>
+	      <h2 class="subtitle">
+	        Developed by Swaraj Renghe, Shreyas Shankar and Sriven Reddy
+	      </h2>
+	    </div>
+	  </div>
+	</section>
+
+	<div class="container">
+		<div class="notification">
+			<div class="tile is-ancestor">
+			  <div class="tile is-vertical is-parent">
+			    <div class="tile is-child box" style="font-size: 19px;">
+			      <p class="title">Training Architecture</p>
+			      <figure class="image">
+			        <img src="/static/images/pipeline.jpeg">
+			      </figure>
+			      	<br><br>
+			      	<p> For this architecture, we tried a number of different standard machine learning algorithms, and tried some voting methods between the highest performing ones too. <br> The data would first be streamed into a pre-processing. This is standard NLP preprocessing steps like stop word removal and and lemmatisation. <br>
+			      	Then for feature representation too, we went through and tried a variety of techniques like DoctoVec, WordtoVec and weighted averaging between Text content and Title content. We also did PCA on vectors after Tf-IDF vectorisation. We did hyper parameter tuing on these different feature representations. <br><br> For Classification we tried the following algorithms: <li> SVM </li> <li> Random Forest </li> <li> Logistic Regression </li><li> XGBoost </li><li> Multi-Layer Perceptron  <br><br></li></p>
+
+			      </ol> 
+			    </div>	 
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="notification">
+			<div class="tile is-ancestor">
+			  <div class="tile is-vertical is-parent">
+			    <div class="tile is-child box" style="font-size: 19px;">
+			      <p class="title">Dataset Used</p>
+			      <p> The dataset used has collected news from various major publications, including the New York Times, Breitbart, CNN, Business Insider, the Atlantic etc. The data primarily falls between the years of 2016 and July 2017.  It had over 140,000 articles form 15 major publications.
+			      	<br>
+			      For Fake News, we used another dataset that was sourced from several known fake news sources, and websites. 
+			      <br><br>
+			  		The data contains various metadata about each article, such as publication source,author, date,title etc. All of this information is used during the feature extraction step. 
+			  		</p><br> 
+
+
+
+
+			      <nav class="level">
+			        <div class="level-item has-text-centered">
+			          <div>
+			            <p class="heading">Total Articles</p>
+			            <p class="title">143,000 articles from 15 American publications </p>
+			          </div>
+			        </div>
+			        
+	
+			      </nav>
+
+			    </div>	 
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="notification">
+			<div class="tile is-ancestor">
+			  <div class="tile is-vertical is-parent">
+			    <div class="tile is-child box" style="font-size: 19px;">
+			      <p class="title">Validation and Verification </p>
+			      <p> The results we obtained for each of the models are as follows: 
+			      	<li> XGBoost : 0.94</li>
+			      	<li> Random Forest : 0.82</li>
+			      	<li> MLP : 0.92 </li>
+			      	<li> SVM : 0.82</li>
+			      	<li> Logistic Regression : 0.90</li>
+			      	<li> Voting on top 5 : 0.91</li>
+			      	<li> Voting on top 3 : 0.93</li>
+			      	 </p>
+			    </div>	 
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="notification">
+			<div class="tile is-ancestor">
+			  <div class="tile is-vertical is-parent">
+			    <div class="tile is-child box" style="font-size: 19px;">
+			      <p class="title">Validation and Verification </p>
+			      <p> The results we obtained for each of the models are as follows: 
+			      	<li> XGBoost : 0.94</li>
+			      	<li> Random Forest : 0.82</li>
+			      	<li> MLP : 0.92 </li>
+			      	<li> SVM : 0.82</li>
+			      	<li> Logistic Regression : 0.90</li>
+			      	<li> Voting on top 5 : 0.91</li>
+			      	<li> Voting on top 3 : 0.93</li>
+			      	 </p>
+			    </div>	 
+			  </div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="container">
+		<div class="notification">
+			<div class="tile is-ancestor">
+			  <div class="tile is-vertical is-parent">
+			    <div class="tile is-child box" style="font-size: 19px;">
+			      <p class="title">Testing Inputs </p>
+
+
+	   		      			<div class="card">
+	   		      			  <div class="card-content">
+	   		      			    <div class="media">
+
+	   		      			      <div class="media-content">
+	   		      			        <p class="title is-4">15 Civilians Killed In Single US Airstrike Have Been Identified
+</p>
+	   		      			        <p class="subtitle is-6">Jessica Purkiss</p>
+	   		      			      </div>
+	   		      			    </div>
+
+	   		      			    <div class="content" style="font-size: 19px">
+	   		      			      The Bureau has been able to identify 15 civilians killed in a single US drone strike in Afghanistan last month – the biggest loss of civilian life in one strike since the attack on the Medecins Sans Frontieres hospital (MSF) last October. 
+	   		      			      The US claimed it had conducted a “counter-terrorism” strike against Islamic State (IS) fighters when it hit Nangarhar province with missiles on September 28. But the next day the United Nations issued an unusually rapid and strong statement saying the strike had killed 15 civilians and injured 13 others who had gathered at a house to celebrate a tribal elder’s return from a pilgrimage to Mecca. 
+	   		      			      The Bureau spoke to a man named Haji Rais who said he was the owner of the house that was targeted. He said 15 people were killed and 19 others injured, and provided their names (listed below). The Bureau was able to independently verify the identities of those who died. 
+	   		      			      Rais’ son, a headmaster at a local school, was among them. Another man, Abdul Hakim, lost three of his sons in the attack. 
+	   		      			      Rais said he had no involvement with IS and denied US claims that IS members had visited his house before the strike. He said: “I did not even speak to those sort of people on the phone let alone receiving them in my house.” 
+	   		      			    </div>
+
+	   		      			      <footer class="card-footer button_to_press">
+	   		      			        <p class="card-footer-item" onclick="add_to_input('The Bureau has been able to identify 15 civilians killed in a single US drone strike in Afghanistan last month – the biggest loss of civilian life in one strike since the attack on the Medecins Sans Frontieres hospital (MSF) last October. The US claimed it had conducted a “counter-terrorism” strike against Islamic State (IS) fighters when it hit Nangarhar province with missiles on September 28. But the next day the United Nations issued an unusually rapid and strong statement saying the strike had killed 15 civilians and injured 13 others who had gathered at a house to celebrate a tribal elder’s return from a pilgrimage to Mecca. ')">
+	   		      			          <b> Add To Model </b>
+	   		      			        </p>
+	   		      			      </footer>
+	   		      			  </div>
+	   		      			</div>
+
+
+	   		      			<div class="card">
+	   		      			  <div class="card-content">
+	   		      			    <div class="media">
+
+	   		      			      <div class="media-content">
+	   		      			        <p class="title is-4">FLYNN: Hillary Clinton, Big Woman on Campus</p>
+	   		      			        <p class="subtitle is-6">Daniel J. Flynn</p>
+	   		      			      </div>
+	   		      			    </div>
+
+	   		      			    <div class="content" style="font-size: 19px">
+	   		      			      Ever get the feeling your life circles the roundabout rather than heads in a straight line toward the intended destination? [Hillary Clinton remains the big woman on campus in leafy, liberal Wellesley, Massachusetts. Everywhere else votes her most likely to don her inauguration dress for the remainder of her days the way Miss Havisham forever wore that wedding dress.  Speaking of Great Expectations, Hillary Rodham overflowed with them 48 years ago when she first addressed a Wellesley graduating class. The president of the college informed those gathered in 1969 that the students needed “no debate so far as I could ascertain as to who their spokesman was to be” (kind of the like the Democratic primaries in 2016 minus the   terms unknown then even at a Seven Sisters school). “I am very glad that Miss Adams made it clear that what I am speaking for today is all of us —  the 400 of us,” Miss Rodham told her classmates. After appointing herself Edger Bergen to the Charlie McCarthys and Mortimer Snerds in attendance, the    bespectacled in granny glasses (awarding her matronly wisdom —  or at least John Lennon wisdom) took issue with the previous speaker. Despite becoming the first   to win election to a seat in the U. S. Senate since Reconstruction, Edward Brooke came in for criticism for calling for “empathy” for the goals of protestors as he criticized tactics. Though Clinton in her senior thesis on Saul Alinsky lamented “Black Power demagogues” and “elitist arrogance and repressive intolerance” within the New Left, similar words coming out of a Republican necessitated a brief rebuttal. “Trust,” Rodham ironically observed in 1969, “this is one word that when I asked the class at our rehearsal what it was they wanted me to say for them, everyone came up to me and said ‘Talk about trust, talk about the lack of trust both for us and the way we feel about others.
+	   		      			    </div>
+
+	   		      			      <footer class="card-footer button_to_press">
+	   		      			        <p class="card-footer-item" onclick="add_to_input('Ever get the feeling your life circles the roundabout rather than heads in a straight line toward the intended destination? [Hillary Clinton remains the big woman on campus in leafy, liberal Wellesley, Massachusetts. Everywhere else votes her most likely to don her inauguration dress for the remainder of her days the way Miss Havisham forever wore that wedding dress.  Speaking of Great Expectations, Hillary Rodham overflowed with them 48 years ago when she first addressed a Wellesley graduating class. The president of the college informed those gathered in 1969 that the students needed “no debate so far as I could ascertain as to who their spokesman was to be” (kind of the like the Democratic primaries in 2016 minus the   terms unknown then even at a Seven Sisters school). “I am very glad that Miss Adams made it clear that what I am speaking for today is all of us —  the 400 of us,” Miss Rodham told her classmates. After appointing herself Edger Bergen to the Charlie McCarthys and Mortimer Snerds in attendance, the    bespectacled in granny glasses (awarding her matronly wisdom —  or at least John Lennon wisdom) took issue with the previous speaker. Despite becoming the first   to win election to a seat in the U. S. Senate since Reconstruction, Edward Brooke came in for criticism for calling for “empathy” for the goals of protestors as he criticized tactics. Though Clinton in her senior thesis on Saul Alinsky lamented “Black Power demagogues” and “elitist arrogance and repressive intolerance” within the New Left, similar words coming out of a Republican necessitated a brief rebuttal. “Trust,” Rodham ironically observed in 1969, “this is one word that when I asked the class at our rehearsal what it was they wanted me to say for them, everyone came up to me and said ‘Talk about trust, talk about the lack of trust both for us and the way we feel about others.')">
+	   		      			          <b> Add To Model </b>
+	   		      			        </p>
+	   		      			      </footer>
+	   		      			  </div>
+	   		      			</div>
+
+
+
+	   		    </div>
+	   		  </div>
+
+	   		</div>
+
+	   		<p class="title"> Article Input </p>
+
+	   		<div class="field has-addons">
+	   		  <p class="control is-expanded">
+	   		    <!-- <input class="input is-focused" type="text" placeholder="Enter Tweet" id="input"> -->
+	   		    <textarea class="textarea" placeholder="Enter Article" id="input"></textarea>
+	   		  </p>
+	   		  <p class="control">
+	   		    <a class="button is-primary" onclick="clicked()">
+	   		      Run Model
+	   		    </a>
+	   		  </p>
+	   		</div>
+
+
+	   		<br>
+	   		<p class="title" id="result"> Result :  </p>
+	   		<br>
+	   		<br>
+	   		<br>
+
+	   		<div class="container" style="width: 15%;">
+	   		  <div class="notification">
+	   		     <div class="buttons">
+	   		       <a href="/" style="text-decoration: none;">
+	   			       	<button class="button is-primary" style="margin-right: 20px; font-size: 19px">
+	   			       		<b>Go Back Home </b>
+	   			       	</button>
+	   		       </a>
+	   		     </div>
+	   		  </div>
+	   		</div>
+
+	  </div>
+	</div>
+	
+	
+
+</body>
+
+<script type="text/javascript">
+	function add_to_input (a) {
+		document.getElementById ("input").value = a;
+	}
+	function clicked () {
+		console.log ("clicked")
+		var tweet = document.getElementById ("input").value;
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4 && this.status == 200) {
+		       if (xhttp.responseText == "Fake") {
+		       		document.getElementById ("result").innerText = "Running AI Model..."
+		       		setTimeout(function(){ document.getElementById ("result").innerText = " Result : This is Fake News";  }, 1500);	
+		       }
+		       else {
+		       		document.getElementById ("result").innerText = "Running AI Model..."
+		       		setTimeout(function(){ document.getElementById ("result").innerText = " Result : This is NOT Fake News";  }, 1500);
+		       }
+		    }
+		};
+		xhttp.open("POST", "/fake_detect", true);
+		xhttp.send(tweet);
+	}
+</script>
+
+</html>

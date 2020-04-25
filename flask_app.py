@@ -27,6 +27,7 @@ def get_prediction():
 		return "yes"
 	else:
 		return "no"
+
 @app.route ("/fake_detect", methods=["POST"])
 def fake_detect():
 	print (request.data)
@@ -38,7 +39,7 @@ def fake_detect():
 		return "True"
 	
 @app.route ("/fake_news")
-def temp():
+def fake_news():
 	return render_template ("fake_news.html")
 
 @app.route ("/temp")
