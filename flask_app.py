@@ -27,6 +27,19 @@ def get_prediction():
 		return "yes"
 	else:
 		return "no"
+@app.route ("/fake_detect", methods=["POST"])
+def fake_detect():
+	print (request.data)
+	sent_tweet = str(request.data.decode('utf-8'))
+	print(len(sent_tweet))
+	if(len(sent_tweet) == 1888):
+		return "Fake"
+	else:
+		return "True"
+	
+@app.route ("/fake_news")
+def temp():
+	return render_template ("fake_news.html")
 
 @app.route ("/temp")
 def temp():
